@@ -28,7 +28,7 @@
     --accent: 20 80% 45%;
     --accent-foreground: 60 15% 95%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 60 15% 95%;
 
     --border: 20 10% 85%;
@@ -44,29 +44,35 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight;
+    @apply font-display tracking-tight text-forest;
   }
 }
 
 @layer components {
   .pattern-overlay {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-10v-10h-4v10h-10v4h10v10h4v-10h10zM4 4h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM4 14h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM4 24h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM4 34h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM4 44h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM4 54h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM4 64h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zM14 4v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zM14 14v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zM14 24v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zM14 34v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zM14 44v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zM14 54v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zm10 0v4h4v-4h-4zM4 14v-4H0v4h4zm0 10v-4H0v4h4zm0 10v-4H0v4h4zm0 10v-4H0v4h4zm0 10v-4H0v4h4zM14 14h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zM24 14h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zM34 14h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zm0 10h-4v-4h4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 10h4v-4h-4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 10h4v-4h-4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 10h4v-4h-4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 10h4v-4h-4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 10h4v-4h-4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 10h4v-4h-4v4zM4 14h4v-4H4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4zm10 0h4v-4h-4v4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
   
   .kenya-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50L0 50 50 0 100 50 50 100z' fill='%23C84C0C' fill-opacity='0.1'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0L100 50 50 100 0 50z' fill='%23C84C0C' fill-opacity='0.1'/%3E%3C/svg%3E");
     background-size: 60px 60px;
   }
   
-  .kenya-gradient {
-    @apply bg-gradient-to-r from-sand via-savanna to-sand;
+  .pattern-kenya-shield {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 10 L100 30 L100 90 L60 110 L20 90 L20 30 Z' fill='none' stroke='%232F4538' stroke-width='1'/%3E%3Cpath d='M40 50 L80 50 L80 70 L40 70 Z' fill='none' stroke='%232F4538' stroke-width='0.5'/%3E%3Cpath d='M60 30 L60 90' stroke='%232F4538' stroke-width='0.5'/%3E%3C/svg%3E");
   }
-
-  .text-shadow {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  
+  .kenya-shield-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 120'%3E%3Cpath d='M50 5 L90 25 L90 95 L50 115 L10 95 L10 25 Z' fill='none' stroke='%23C84C0C' stroke-width='1'/%3E%3Cpath d='M30 40 L70 40 L70 80 L30 80 L30 40 Z' fill='none' stroke='%23C84C0C' stroke-width='0.8'/%3E%3Cpath d='M50 25 L50 95' stroke='%23C84C0C' stroke-width='0.8'/%3E%3C/svg%3E");
+    background-size: 80px 80px;
+  }
+  
+  .kenya-gradient {
+    @apply bg-gradient-to-r from-terracotta via-sand to-forest bg-clip-text text-transparent;
   }
   
   .maasai-bg {
@@ -83,38 +89,59 @@
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
                 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%239B4F3F'/%3E%3Cpath d='M25,25 L75,25 L75,75 L25,75 Z' stroke='%23E5D1B8' stroke-width='3' fill='none'/%3E%3C/svg%3E");
   }
+
+  /* Kenya flag colors */
+  .kenya-black {
+    @apply bg-black;
+  }
+  
+  .kenya-red {
+    @apply bg-terracotta;
+  }
+  
+  .kenya-green {
+    @apply bg-forest;
+  }
+  
+  .kenya-white {
+    @apply bg-white;
+  }
+
+  /* Kenya flag inspired stripe */
+  .kenya-flag-stripe {
+    @apply relative before:absolute before:inset-y-0 before:left-0 before:w-1 before:bg-gradient-to-b before:from-black before:via-terracotta before:to-forest;
+  }
 }
 
-/* Language Toggle Animation */
+/* Language switch animation */
 .lang-switch-enter {
   opacity: 0;
   transform: translateY(-10px);
 }
+
 .lang-switch-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .lang-switch-exit {
   opacity: 1;
+  transform: translateY(0);
 }
+
 .lang-switch-exit-active {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(-10px);
   transition: opacity 300ms, transform 300ms;
 }
 
-/* Kenya flag colors for various uses */
-.kenya-black {
-  background-color: #000000;
+/* Animation classes */
+@keyframes shield-float {
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50% { transform: translateY(-10px) rotate(-2deg); }
 }
-.kenya-red {
-  background-color: #bb0000;
-}
-.kenya-green {
-  background-color: #006600;
-}
-.kenya-shield-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpath d='M100,20 L180,60 L180,140 L100,180 L20,140 L20,60 Z' fill='%23C84C0C' fill-opacity='0.1' stroke='%232F4538' stroke-width='2' stroke-opacity='0.2'/%3E%3Cpath d='M100,40 L160,70 L160,130 L100,160 L40,130 L40,70 Z' fill='none' stroke='%232F4538' stroke-width='1' stroke-opacity='0.1'/%3E%3C/svg%3E");
-  background-size: 100px 100px;
+
+.animate-shield {
+  animation: shield-float 6s ease-in-out infinite;
 }
