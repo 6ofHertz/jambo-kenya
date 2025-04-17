@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { ArrowRight, Camera, PaintBrush, BookOpen, Music, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, Camera, Paintbrush, BookOpen, Music, Sparkles, Users } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const galleryItems = [
