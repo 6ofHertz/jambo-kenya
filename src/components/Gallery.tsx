@@ -11,6 +11,7 @@ const galleryItems = [
     description: 'Traditional ceremonies and daily life of the Maasai people.',
     type: 'Culture',
     color: 'bg-terracotta',
+    imagePlaceholder: 'maasai-bg'
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const galleryItems = [
     description: 'Stories of how the Kikuyu people came to be and their relationship with Mount Kenya.',
     type: 'Folklore',
     color: 'bg-forest',
+    imagePlaceholder: 'kikuyu-bg'
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const galleryItems = [
     description: 'The unique blend of African, Arabic, and Indian influences in coastal Kenyan buildings.',
     type: 'Architecture',
     color: 'bg-clay',
+    imagePlaceholder: 'swahili-bg'
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const galleryItems = [
     description: 'Exploring the sounds and craftsmanship of Kenyan musical heritage.',
     type: 'Music',
     color: 'bg-ochre',
+    imagePlaceholder: 'music-bg'
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ const galleryItems = [
     description: 'The vibrant fabrics and meaningful designs across different communities.',
     type: 'Art',
     color: 'bg-sunset',
+    imagePlaceholder: 'textile-bg'
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const galleryItems = [
     description: 'How animals feature in traditional stories and cultural beliefs.',
     type: 'Folklore',
     color: 'bg-forest',
+    imagePlaceholder: 'wildlife-bg'
   },
 ];
 
@@ -56,6 +62,9 @@ const Gallery: React.FC = () => {
     <section id="gallery" className="py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
+          <div className="mb-6 flex justify-center">
+            <div className="w-20 h-1 bg-terracotta rounded"></div>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-forest mb-4">
             {t('gallery.title')}
           </h2>
@@ -72,7 +81,16 @@ const Gallery: React.FC = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <div className={`absolute inset-0 ${item.color} flex items-center justify-center`}>
-                  <span className="text-white font-bold text-xl">AI Generated Image</span>
+                  <div className="absolute inset-0 opacity-30 pattern-overlay"></div>
+                  {/* Kenya flag colors as stripes on the side */}
+                  <div className="absolute left-0 top-0 bottom-0 w-3 flex flex-col">
+                    <div className="flex-1 bg-black"></div>
+                    <div className="flex-1 bg-terracotta"></div>
+                    <div className="flex-1 bg-forest"></div>
+                  </div>
+                  <span className="text-white font-bold text-xl relative z-10">
+                    {item.imagePlaceholder}
+                  </span>
                 </div>
               </div>
               <div className="p-6">

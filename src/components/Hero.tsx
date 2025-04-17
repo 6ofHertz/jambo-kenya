@@ -11,12 +11,19 @@ const Hero: React.FC = () => {
     <section 
       id="home" 
       className="relative min-h-[90vh] flex items-center overflow-hidden pattern-overlay"
-      style={{
-        backgroundImage: "linear-gradient(to right, rgba(229, 209, 184, 0.9), rgba(201, 188, 142, 0.9)), url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"
-      }}
     >
-      {/* AI Generated Image Placeholder - would normally be dynamically generated */}
+      {/* Kenya-inspired flag background with overlay */}
       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-forest/20 to-terracotta/20" aria-hidden="true">
+          {/* Kenyan flag-inspired stripes */}
+          <div className="absolute top-0 left-0 right-0 h-[25%] bg-black"></div>
+          <div className="absolute top-[25%] left-0 right-0 h-[25%] bg-terracotta"></div>
+          <div className="absolute top-[50%] left-0 right-0 h-[25%] bg-forest"></div>
+          <div className="absolute top-[75%] left-0 right-0 h-[25%] bg-black/70"></div>
+          
+          {/* Maasai shield pattern overlay */}
+          <div className="absolute inset-0 opacity-20 pattern-overlay"></div>
+        </div>
         <div 
           className="absolute inset-0 bg-gradient-to-b from-transparent to-sand/90 pointer-events-none"
           aria-hidden="true"
@@ -25,11 +32,11 @@ const Hero: React.FC = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center lg:text-left lg:ml-0">
-          <div className="inline-block px-6 py-2 mb-6 bg-forest/10 rounded-full">
+          <div className="inline-block px-6 py-2 mb-6 bg-forest/10 rounded-full border border-forest/20">
             <span className="text-forest font-medium">AI + Kenyan Culture</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-forest leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-forest leading-tight text-shadow">
             {t('hero.title')}
           </h1>
           
