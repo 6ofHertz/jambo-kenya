@@ -46,7 +46,7 @@ const galleryItems = [
     title: 'Kanga & Kitenge Art',
     description: 'Exploring the vibrant textiles, patterns and their cultural significance across Kenya.',
     type: 'Art',
-    icon: <PaintBrush className="h-5 w-5" />,
+    icon: <Paintbrush className="h-5 w-5" />,
     color: 'bg-gradient-to-br from-sunset to-sunset/80',
     pattern: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v8H0V0zm16 0h16v8H16V0zm16 0h16v8H32V0zm16 0h16v8H48V0zM0 8h8v16H0V8zm0 16h8v16H0v-16zm0 16h8v16H0v-16zM8 8h40v8H8V8zm0 8h8v16H8V16zm0 16h8v16H8V32zm0 16h8v8H8v-8zm8 0h40v8H16v-8zm32-8h8v8h-8v-8zm0-16h8v16h-8V24zm0-16h8v16h-8V8zm8 8h8v48h-8V16zm0-8h8v8h-8V8z' fill='%23ffffff' fill-opacity='0.1'/%3E%3C/svg%3E")`
   },
